@@ -1,6 +1,8 @@
 # Geografie zum Wenden
 
-Das Projekt liegt derzeit privat auf GitHub. Die Veröffentlichung über GitHub Pages ist vorbereitet und wartet auf die Zustimmung zur öffentlichen Sichtbarkeit. Lokal lässt sich `index.html` direkt öffnen.
+[**Lernumgebung öffnen**](https://patrickfischerksa.github.io/geografie-lernkartei/)
+
+Das Projekt ist öffentlich auf GitHub verfügbar und wird über GitHub Pages veröffentlicht. Lokal lässt sich `index.html` direkt öffnen.
 
 158 drehbare Frage-Antwort-Karten auf Grundlage von **Geografie Einführung 2026.pdf** und **Einführung GG.pdf** (A. Blatter & C. Göldi, August 2026). Aufbau und Lernmechanik entsprechen der [Geschichte-Lernkartei](https://github.com/PatrickFischerKSA/geschichte-lernkartei).
 
