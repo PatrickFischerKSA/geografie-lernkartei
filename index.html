@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="158 Geografie-Lernkarten mit Modellantworten, Rechenwegen, drei Niveaus, Spielrunden und gezielter Repetition. Nach den beiden Unterrichtsdossiers.">
+  <title>Geografie zum Wenden · Lernkartei</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="learning.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#study">Zur Lernkarte</a>
+  <header class="masthead">
+    <a class="brand" href="#" aria-label="Geografie zum Wenden, Start"><span class="mark" aria-hidden="true">↔</span><span>GEOGRAFIE<br><b>ZUM WENDEN</b></span></a>
+    <nav aria-label="Ansichten"><button class="nav active" id="study-tab" aria-pressed="true">Lernkarten</button><button class="nav" id="goals-tab" aria-pressed="false">Lernziele & Quellen</button></nav>
+    <span class="edition">REPETITION <span>01 / GRUNDLAGEN</span></span>
+  </header>
+  <main>
+    <section id="study-view">
+      <div class="intro"><div><p class="eyebrow">DIE ERDE VERSTEHEN</p><h1>Erst erinnern.<br><em>Dann wenden.</em></h1><p class="lead">Formuliere deine Antwort. Drehe die Karte um<br class="desktop"> und vergleiche sie mit der Modellantwort.</p></div><div class="intro-note"><span class="big-number">158</span><span>KARTEN · 11 LERNZIELE</span><p>Erdgestalt, Koordinaten,<br>Jahreszeiten & Zeitrechnung.</p></div></div>
+      <div class="workspace">
+        <button id="filters-toggle" class="mobile-filter" aria-expanded="false" aria-controls="filters">Auswahl & Lernstand <span aria-hidden="true">＋</span></button>
+        <aside class="sidebar" id="filters" aria-label="Kartenauswahl">
+          <div class="section-label"><span>DEIN KARTENSTAPEL</span><span aria-hidden="true">↓</span></div>
+          <label for="search" class="sr-only">Karten durchsuchen</label><input id="search" type="search" placeholder="Frage oder Begriff suchen …" autocomplete="off">
+          <label for="goal-filter">Lernziel</label><select id="goal-filter"><option value="all">Alle Lernziele</option></select>
+          <div id="topic-list" class="topics" aria-label="Themen"></div>
+          <label for="mode">Wiederholen</label><select id="mode"><option value="all">Alle Karten</option><option value="new">Noch nicht bewertet</option><option value="again">Noch üben</option><option value="known">Gewusst</option><option value="notes">Korrekturen & Ergänzungen</option><option value="open">Offene Quellenfragen</option></select>
+          <div class="progress-block"><div><span>Dein Lernstand</span><strong id="progress-text">0 / 158</strong></div><progress id="progress" max="158" value="0" aria-label="Als gewusst markierte Karten"></progress><small>Speicherung nur in diesem Browser.</small><p id="storage-warning" class="warning" hidden>Speicherung nicht verfügbar. Dein Lernstand gilt nur bis zum Schliessen.</p></div>
+          <button id="reset" class="text-button">Lernstand zurücksetzen</button><div id="reset-confirm" hidden><p>Alle Bewertungen, Wiederholungstermine, XP und Runden löschen?</p><button id="reset-yes">Zurücksetzen</button> <button id="reset-no">Abbrechen</button></div>
+        </aside>
+        <section class="study" id="study" tabindex="-1" aria-label="Aktuelle Lernkarte">
+          <div class="level-picker" role="group" aria-label="Anspruch wählen"><button data-level="basis" aria-pressed="true">Basis</button><button data-level="vertieft" aria-pressed="false">Vertieft</button><button data-level="profi" aria-pressed="false">Profi</button></div>
+          <p id="level-description" class="level-description" role="status"></p>
+          <div class="play-modes" role="group" aria-label="Lernmodus"><button data-play="free" aria-pressed="true">Freies Lernen</button><button data-play="game" aria-pressed="false">Spielrunde</button><button data-play="review" aria-pressed="false">Repetition <span id="due-count">0</span></button></div>
+          <section id="round-setup" class="round-panel" hidden aria-labelledby="round-title"><p class="eyebrow" id="round-eyebrow">DEINE NÄCHSTE ETAPPE</p><h2 id="round-title">Zehn Karten. Ein Lernziel: weiterkommen.</h2><p id="round-description"></p><div class="round-totals"><span><b id="total-xp">0</b> XP gesammelt</span><span><b id="total-rounds">0</b> Runden geschafft</span></div><button id="start-round" class="primary-action">Runde starten →</button><p id="round-availability" class="round-hint"></p><details class="game-rules"><summary>So funktionieren Punkte & Wiederholung</summary><p>Antworte zuerst aus dem Gedächtnis, wende die Karte und bewerte dich ehrlich. Die Bewertung erfolgt durch dich, nicht automatisch.</p><p>10 XP für eine beim ersten Versuch gewusste Karte, 5 XP nach einem erneuten Versuch. Jede dritte gewusste Karte in Folge bringt 5 Bonus-XP. Pro Karte gibt es nur einmal am lokalen Kalendertag Punkte.</p><p>«Noch üben» setzt die Serie zurück und bringt die Karte nach bis zu drei anderen Karten wieder. Eine Runde endet, sobald jede Karte einmal als gewusst bewertet wurde. Das ist ein Etappenziel, kein Nachweis dauerhafter Beherrschung.</p><p>Gewusste Karten werden nach 1, 3, 7, 14 und schliesslich 30 Tagen erneut fällig. «Noch üben» setzt das Intervall zurück. Der Repetitionsmodus nimmt nur bereits bewertete, fällige Karten auf. Offene Quellenfragen bleiben im freien Lernen.</p><p>Die Runde verwendet deine aktuelle Karten-Auswahl. Ein Moduswechsel oder Neuladen beendet die laufende Runde; Bewertungen und bereits verdiente Punkte bleiben gespeichert.</p></details></section>
+          <div id="round-hud" class="round-hud" hidden><div><span id="round-mode-label">SPIELRUNDE</span><strong id="round-counter"></strong></div><div><span>PUNKTE</span><strong id="round-score">0 XP</strong></div><div><span>SERIE</span><strong id="round-streak">0</strong></div><progress id="round-progress" aria-label="In der Runde gewusste Karten" max="10" value="0"></progress><button id="leave-round" class="text-button">Runde beenden</button></div>
+          <p id="round-feedback" class="round-feedback" role="status" aria-live="polite" hidden></p>
+          <section id="round-result" class="round-panel result-panel" hidden tabindex="-1" aria-labelledby="result-title"><p class="eyebrow">ETAPPE GESCHAFFT</p><h2 id="result-title">Alle Karten der Runde wiederholt.</h2><p id="result-description"></p><div id="result-metrics" class="result-metrics"></div><p>Deine Wiederholungstermine sind gespeichert. Schau im Repetitionsmodus nach, welche Karten als Nächstes fällig sind.</p><button id="another-round" class="primary-action">Nächste Runde vorbereiten →</button><button id="result-review">Zur Repetition</button></section>
+          <div class="deck-bar"><p id="deck-count" role="status" aria-live="polite"></p><button id="shuffle" class="text-button">⇄ Mischen</button></div>
+          <div id="card-region">
+            <div class="card-stage" id="card-stage"><article class="card" id="card" aria-label="Lernkarte">
+              <div class="face front" id="front"><div class="card-meta"><span id="topic-label"></span><span id="card-id"></span></div><div class="question-body"><p class="eyebrow">FRAGE · <span id="card-level"></span></p><h2 id="question"></h2><figure id="question-figure" hidden><img id="question-image" alt=""><figcaption id="image-caption"></figcaption></figure></div><div class="card-bottom"><span id="origin"></span><span aria-hidden="true">↻</span></div></div>
+              <div class="face back" id="back" inert aria-hidden="true"><div class="card-meta"><span>MODELLANTWORT</span><span id="status-label"></span></div><div id="answer" class="answer"></div><aside id="answer-note" class="answer-note" hidden></aside><div class="source"><strong>Zum Nachprüfen</strong><p id="source"></p><div id="external-links"></div></div></div>
+            </article></div>
+            <button id="flip" class="flip-button" aria-controls="card" aria-expanded="false">Antwort aufdecken <span aria-hidden="true">↻</span></button>
+            <div class="rating" id="rating" hidden><button id="again">↺ Noch üben</button><button id="known">✓ Gewusst</button></div>
+            <div class="card-nav"><button id="prev" aria-label="Vorherige Karte">← <span>Zurück</span></button><span id="position"></span><button id="next" aria-label="Nächste Karte"><span>Weiter</span> →</button></div>
+            <p class="keyboard">LEERTASTE wenden <span>·</span> ← → blättern <span>·</span> 1 noch üben <span>·</span> 2 gewusst</p>
+          </div>
+          <div id="empty" class="empty" hidden><span aria-hidden="true">✓</span><h2 id="empty-title">Keine passenden Karten</h2><p id="empty-text">Passe die Auswahl an oder setze die Filter zurück.</p><button id="clear-filters">Alle Karten anzeigen</button></div>
+          <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+    </section>
+    <section id="goals-view" hidden aria-labelledby="goals-title"><p class="eyebrow">LERNZIELE & NACHWEISE</p><h1 id="goals-title">Die Erde verstehen.</h1><p class="lead">Elf Lernbereiche aus den beiden Unterlagen. Die Ziele sind für diese Kartei abgeleitet; ein separates Prüfungslernzielblatt liegt nicht vor.</p><div class="scope-note"><h2>Deine Arbeitsgrundlage</h2><p><b>A</b> = Geografie Einführung 2026.pdf, 10 PDF-Seiten (Titelblatt und gedruckte Seiten 1–9). <b>B</b> = Einführung GG.pdf, 15 PDF-Seiten (gedruckte Seiten 10–24). Die Karten nennen jeweils die <b>PDF-Seiten</b>.</p><p>Enthalten sind die Grundlagen, alle neun Kennzahlen-Rechnungen, die sieben Atlas-Posten, Jahreszeiten und die Zeitrechnungen. Eigene Transferfragen helfen beim Anwenden. Vergleiche zuerst deine eigene Antwort mit der Modellantwort; die Bewertung erfolgt durch dich.</p><p>Die Lehrbuchkopien und Atlasseiten sind nicht beigefügt. Ortskoordinaten sind deshalb als gerundete Vergleichswerte gekennzeichnet. Zwei kartenspezifische Zeitzonen-Zählungen bleiben offen. Magnetfeld und Kartografie stehen nur im Inhaltsverzeichnis; die dazugehörigen Kapitel fehlen.</p><div id="status-summary" class="status-summary"></div></div><div id="goal-cards" class="goal-grid"></div><section class="audit-section"><h2>Präzisierungen, die beim Lernen helfen</h2><ul><li>Das Geoid ist eine Höhenbezugsfläche des Schwerefelds; es bildet keine Berge und Täler ab.</li><li>Die Erdachse ist etwa 23,4° zur Senkrechten auf der Erdbahnebene geneigt. Die rund 26’000 Jahre betreffen ihre Präzession.</li><li>Jahreszeiten entstehen durch Achsneigung und Umlauf. Die Erde ist Anfang Januar der Sonne am nächsten.</li><li>Ortszeit, Zonenzeit und Sommerzeit sind verschiedene Begriffe. Ohne Datum braucht manche Zeitrechnung mehrere Antworten.</li><li>Nordkoreas halbstündige Sonderzone ist historisch; Samoa liess 2011 den 30. Dezember aus.</li><li>Atlaswerte sind gerundet. Die «Tour d’Europe» wurde auch anhand der Kästchen und Abbildungen abgeglichen.</li></ul><p><a href="docs/ABDECKUNG.md">Aufgaben-Zuordnung</a> · <a href="docs/PRUEFBERICHT.md">Prüfbericht und Annahmen</a> · <a href="cards.json" download>Alle Karten als JSON</a></p></section><section class="audit-section"><h2>Ergänzende Fachquellen</h2><p>Fachliche Präzisierungen und veränderliche Angaben wurden am 1. Oktober 2026 ergänzend geprüft. Zeitrechnungen verwenden das genannte historische Datum oder eine ausdrücklich angegebene Annahme. Quellenlinks findest du auch auf den jeweiligen Karten.</p><ul id="bibliography"></ul></section></section>
+  </main>
+  <footer><span>Wissen entsteht durch Verknüpfen.</span><span>Erde · Orientierung · Zeit</span></footer>
+  <noscript>Bitte aktiviere JavaScript, um die Lernkarten zu wenden. Alle Fragen und Antworten stehen zusätzlich in der Datei cards.json.</noscript>
+</body>
+</html>

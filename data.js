@@ -1,0 +1,3046 @@
+window.LEARNING_DATA = {
+  "title": "Geografie zum Wenden",
+  "version": 1,
+  "sources": {
+    "erde": {
+      "title": "NASA: Earth Facts",
+      "url": "https://science.nasa.gov/earth/facts/"
+    },
+    "sonne": {
+      "title": "NASA: Sun Facts",
+      "url": "https://science.nasa.gov/sun/facts/"
+    },
+    "mond": {
+      "title": "NASA: Moon Facts",
+      "url": "https://science.nasa.gov/moon/facts/"
+    },
+    "system": {
+      "title": "NASA: Solar System Facts",
+      "url": "https://science.nasa.gov/solar-system/solar-system-facts/"
+    },
+    "achse": {
+      "title": "NASA: Reference Systems, Erdachse und Präzession",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/"
+    },
+    "geoid": {
+      "title": "GFZ: Schwerefeld und Geoid",
+      "url": "https://www.gfz.de/sektion/globales-geomonitoring-und-schwerefeld/themen/regionale-und-globale-statische-schwerefeldbestimmung"
+    },
+    "tz": {
+      "title": "IANA: Zeitzonendatenbank",
+      "url": "https://www.iana.org/time-zones"
+    },
+    "asien": {
+      "title": "IANA: Zeitzonen und historische Regeln in Asien",
+      "url": "https://data.iana.org/time-zones/tzdb/asia"
+    },
+    "pazifik": {
+      "title": "IANA: Pazifik, Neuseeland und Samoa",
+      "url": "https://data.iana.org/time-zones/tzdb/australasia"
+    },
+    "amerika": {
+      "title": "IANA: Nordamerika und Grönland",
+      "url": "https://data.iana.org/time-zones/tzdb/northamerica"
+    },
+    "katla": {
+      "title": "Smithsonian: Katla, Koordinaten",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=372030"
+    },
+    "karte": {
+      "title": "swisstopo: Koordinaten eines Ortes bestimmen",
+      "url": "https://www.swisstopo.admin.ch/de/haeufige-fragen-geodaesie-lv"
+    }
+  },
+  "goals": [
+    {
+      "id": "L01",
+      "title": "Geografie verstehen",
+      "description": "Fachgebiete unterscheiden, Mensch und Natur verknüpfen und räumliche Massstäbe beachten."
+    },
+    {
+      "id": "L02",
+      "title": "Erdgestalt",
+      "description": "Kugel, Rotationsellipsoid und Geoid erklären und voneinander abgrenzen."
+    },
+    {
+      "id": "L03",
+      "title": "Sonne & Sonnensystem",
+      "description": "Grössenordnungen, Planeten, Entstehung und Modellgrenzen verstehen."
+    },
+    {
+      "id": "L04",
+      "title": "Rechnen mit Erdgrössen",
+      "description": "Alle neun Kennzahlen-Aufgaben mit Einheiten und Rechenweg lösen."
+    },
+    {
+      "id": "L05",
+      "title": "Himmelsrichtungen & Hemisphären",
+      "description": "Orte und Kontinente den Halbkugeln zuordnen und Positionen vergleichen."
+    },
+    {
+      "id": "L06",
+      "title": "Gradnetz & Koordinaten",
+      "description": "Breite und Länge lesen, umrechnen, auf Karten messen und Gegenpunkte berechnen."
+    },
+    {
+      "id": "L07",
+      "title": "Atlas-Posten",
+      "description": "Die Tour d’Europe und geografische Grenzen mit dem Gradnetz erschliessen."
+    },
+    {
+      "id": "L08",
+      "title": "Jahreszeiten",
+      "description": "Rotation und Revolution trennen, Achsneigung erklären und Sonnenstände zuordnen."
+    },
+    {
+      "id": "L09",
+      "title": "Ortszeit & Zeitzonen",
+      "description": "Ortszeit von Zonenzeit unterscheiden und Zeitdifferenzen nachvollziehbar berechnen."
+    },
+    {
+      "id": "L10",
+      "title": "Zeitrechnen & Flüge",
+      "description": "Übertragungszeiten und Flugaufgaben einschliesslich Sommerzeit und Datumswechsel lösen."
+    },
+    {
+      "id": "L11",
+      "title": "Datumsgrenze & Quellenkritik",
+      "description": "Datumswechsel erklären und historische Zeitzonenentscheidungen einordnen."
+    }
+  ],
+  "cards": [
+    {
+      "id": "G01",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "basis",
+      "question": "Was bedeutet «Geographie» wörtlich und was untersucht das Fach heute?",
+      "answer": [
+        "Geo bedeutet Erde, graphein schreiben bzw. beschreiben. Heute untersucht die Geografie räumliche Strukturen, Entwicklungen und die Beziehungen zwischen Mensch und Umwelt."
+      ],
+      "pages": "A 2–3",
+      "origin": "Geografie verstehen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "G02",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "basis",
+      "question": "Was unterscheidet physische Geografie und Humangeografie?",
+      "answer": [
+        "Physische Geografie untersucht natürliche Prozesse, etwa Klima, Gewässer und Landformen. Humangeografie untersucht menschliche Raumnutzung, etwa Siedlungen, Wirtschaft, Bevölkerung und Verkehr."
+      ],
+      "pages": "A 3",
+      "origin": "Geografie verstehen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "G03",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "vertieft",
+      "question": "Warum ist eine Überschwemmung ein Thema beider Teilgebiete?",
+      "answer": [
+        "Starkregen, Abfluss und Gelände sind natürliche Faktoren. Bebauung, versiegelte Flächen, Schutzbauten und die Gefährdung von Menschen betreffen die Humangeografie. Erst ihr Zusammenwirken erklärt das Risiko."
+      ],
+      "pages": "A 2–3",
+      "origin": "Transfer aus Kapitel 1",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "G04",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "basis",
+      "question": "Was bedeuten Topografie und Länderkunde?",
+      "answer": [
+        "Topografie beschreibt Lage und Gestalt der Erdoberfläche. Die traditionelle Länderkunde beschreibt einen Raum anhand von Natur, Bevölkerung und Nutzung. Moderne Geografie fragt darüber hinaus nach Prozessen, Ursachen und Verflechtungen."
+      ],
+      "pages": "A 2",
+      "origin": "Geografie verstehen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "G05",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "vertieft",
+      "question": "Was bedeutet interdisziplinär? Nenne zwei geografische Beispiele.",
+      "answer": [
+        "Mehrere Fachgebiete tragen zur Untersuchung bei: Beim Klima helfen Physik und Chemie, bei Bevölkerungsentwicklung Mathematik und Sozialwissenschaften."
+      ],
+      "pages": "A 3",
+      "origin": "Geografie verstehen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "G06",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "vertieft",
+      "question": "Warum sind räumliche und zeitliche Massstäbe wichtig?",
+      "answer": [
+        "Ein lokales Hochwasser dauert Stunden oder Tage; die Entstehung eines Gebirges betrifft grosse Räume und Millionen Jahre. Aussagen müssen zum betrachteten Raum und Zeitraum passen. Ein einzelner heisser Tag beweist noch keinen langfristigen Klimatrend."
+      ],
+      "pages": "A 3",
+      "origin": "Geografie verstehen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "G07",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "basis",
+      "question": "Welche Sphären zeigt das Dossier, und wofür stehen sie?",
+      "answer": [
+        "Atmosphäre: Lufthülle; Hydrosphäre: Wasser; Kryosphäre: Eis und Schnee; Lithosphäre: feste äussere Gesteinshülle; Biosphäre: Bereich des Lebens. Sie beeinflussen sich gegenseitig."
+      ],
+      "pages": "A 2",
+      "origin": "Abbildung 2",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "G08",
+      "topic": "Geografie verstehen",
+      "goals": [
+        "L01"
+      ],
+      "level": "profi",
+      "question": "Wie prüfst du eine geografische Darstellung kritisch?",
+      "answer": [
+        "Prüfe Quelle und Datum, räumlichen Ausschnitt, Massstab, Legende und Messgrössen. Unterscheide Beobachtung und Erklärung. Eine alte Weltkarte dokumentiert auch den damaligen Kenntnisstand; sie ist keine genaue Darstellung der heutigen Erde."
+      ],
+      "pages": "A 2–3",
+      "origin": "Methodentransfer",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "E01",
+      "topic": "Erdgestalt",
+      "goals": [
+        "L02"
+      ],
+      "level": "basis",
+      "question": "Welche Beobachtungen sprechen für eine annähernd kugelförmige Erde?",
+      "answer": [
+        "Schiffe verschwinden am Horizont zuerst mit dem Rumpf. Bei Mondfinsternissen ist der Erdschatten rund. Je nach geografischer Breite sieht man andere Sternhöhen und Sternbilder. Satellitenaufnahmen bestätigen die Form."
+      ],
+      "pages": "A 4",
+      "origin": "Erdgestalt",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "E02",
+      "topic": "Erdgestalt",
+      "goals": [
+        "L02"
+      ],
+      "level": "basis",
+      "question": "Was ist die Erdrotation?",
+      "answer": [
+        "Die Erde dreht sich um ihre eigene Achse. Ein mittlerer Sonnentag dauert 24 Stunden. Vom Nordpol aus gesehen erfolgt die Drehung gegen den Uhrzeigersinn, von Westen nach Osten."
+      ],
+      "pages": "A 4; B 9, 11",
+      "origin": "Erdgestalt",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "E03",
+      "topic": "Erdgestalt",
+      "goals": [
+        "L02"
+      ],
+      "level": "vertieft",
+      "question": "Wo ist die Zentrifugalwirkung am stärksten, wo am kleinsten?",
+      "answer": [
+        "Am Äquator ist der Abstand von der Rotationsachse am grössten und damit die Zentrifugalwirkung am stärksten. An den Polen ist der Abstand zur Achse null und die Wirkung verschwindet."
+      ],
+      "pages": "A 4–5",
+      "origin": "Erdgestalt",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "E04",
+      "topic": "Erdgestalt",
+      "goals": [
+        "L02"
+      ],
+      "level": "basis",
+      "question": "Warum beschreibt ein Rotationsellipsoid die Erde besser als eine Kugel?",
+      "answer": [
+        "Durch die Rotation ist die Erde an den Polen abgeplattet und am Äquator etwas ausgebeult. Der Äquatorradius beträgt etwa 6’378 km, der Polradius etwa 6’357 km."
+      ],
+      "pages": "A 5",
+      "origin": "Erdmodelle und Abbildung",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "E05",
+      "topic": "Erdgestalt",
+      "goals": [
+        "L02"
+      ],
+      "level": "vertieft",
+      "question": "Was ist ein Geoid?",
+      "answer": [
+        "Das Geoid ist eine durch das Erdschwerefeld bestimmte Niveaufläche, die näherungsweise dem mittleren Meeresspiegel entspricht und unter den Kontinenten weitergedacht wird. Ungleiche Massenverteilung verursacht Abweichungen vom glatten Referenzellipsoid."
+      ],
+      "pages": "A 4–5",
+      "origin": "Erdgestalt",
+      "note": "Das Geoid bildet keine Gebirge oder realen Hebungen des Untergrunds ab. Die farbige «Kartoffelform» ist stark überhöht.",
+      "links": [
+        "geoid"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "E06",
+      "topic": "Erdgestalt",
+      "goals": [
+        "L02"
+      ],
+      "level": "profi",
+      "question": "Ordne Kugel, Rotationsellipsoid, Geoid und Geländeoberfläche ein.",
+      "answer": [
+        "Kugel: einfaches Modell mit gleichem Radius. Rotationsellipsoid: mathematische Näherung mit Polabplattung. Geoid: physikalische Höhenbezugsfläche des Schwerefelds. Geländeoberfläche: wirkliche Berge, Täler und Meeresböden."
+      ],
+      "pages": "A 4–5",
+      "origin": "Erdgestalt",
+      "note": "Geoid und Geländeoberfläche sind nicht dasselbe.",
+      "links": [
+        "geoid"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "E07",
+      "topic": "Erdgestalt",
+      "goals": [
+        "L02"
+      ],
+      "level": "profi",
+      "question": "Warum kann eine Massenverschiebung bei einem Erdbeben die Rotation beeinflussen?",
+      "answer": [
+        "Die Verteilung der Erdmasse beeinflusst das Trägheitsmoment. Ändert sie sich, können sich Rotationsdauer und Lage von Achsen sehr geringfügig ändern. Der Zeitungsausschnitt liefert keinen Anlass, daraus einen plötzlichen Wechsel der Jahreszeiten abzuleiten."
+      ],
+      "pages": "A 10",
+      "origin": "Abbildung 10: Einordnung",
+      "note": "Die Überschrift allein ersetzt keine Messwerte; das Dossier liefert hier keinen vollständigen Fachbericht.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "S01",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Wie heissen die acht Planeten in der Reihenfolge ab der Sonne?",
+      "answer": [
+        "Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus, Neptun. Pluto gehört zu den Zwergplaneten."
+      ],
+      "pages": "A 6–8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [
+        "system"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S02",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Welche sind die inneren Gesteinsplaneten?",
+      "answer": [
+        "Merkur, Venus, Erde und Mars. Sie besitzen feste Gesteinsoberflächen."
+      ],
+      "pages": "A 7",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [
+        "system"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S03",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Wie unterscheiden sich die vier äusseren Planeten?",
+      "answer": [
+        "Jupiter und Saturn sind Gasriesen. Uranus und Neptun werden als Eisriesen bezeichnet. Alle vier sind wesentlich grösser als die inneren Gesteinsplaneten und besitzen Ringsysteme."
+      ],
+      "pages": "A 7–8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "Neptun hat ebenfalls Ringe; die Aufzählung im Dossier ist unvollständig.",
+      "links": [
+        "system"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "S04",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Wie entstand das Sonnensystem?",
+      "answer": [
+        "Vor etwa 4,6 Milliarden Jahren verdichtete sich eine Gas- und Staubwolke. Im Zentrum entstand die Sonne, in der umgebenden Scheibe wuchsen durch Zusammenballung kleinere Körper zu Planeten heran."
+      ],
+      "pages": "A 8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [
+        "system"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S05",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Was ist der Asteroidengürtel und wo liegt er?",
+      "answer": [
+        "Ein Gebiet mit zahlreichen kleinen Körpern zwischen den Bahnen von Mars und Jupiter. Dort blieben Bausteine des frühen Sonnensystems erhalten."
+      ],
+      "pages": "A 8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [
+        "system"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S06",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Unterscheide Stern, Planet, Mond und Meteorit.",
+      "answer": [
+        "Ein Stern wie die Sonne erzeugt Energie durch Kernfusion. Ein Planet umkreist einen Stern. Ein Mond umkreist einen grösseren Körper wie einen Planeten. Ein Meteorit ist ein natürlicher Körper aus dem All, der den Boden erreicht hat."
+      ],
+      "pages": "A 7–8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "Nicht jedes kleine Objekt im Weltraum ist ein Meteorit; im All spricht man bei kleinen Brocken von Meteoroiden.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "S07",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Welche ungefähren Radien haben Sonne, Erde und Mond?",
+      "answer": [
+        "Sonne: rund 696’000 km; Erde: rund 6’371 km im Mittel; Mond: rund 1’737 km. Radius und Durchmesser dürfen nicht verwechselt werden."
+      ],
+      "pages": "A 5, 7",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [
+        "sonne",
+        "mond",
+        "erde"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S08",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Welche mittleren Entfernungen trennen Erde, Mond und Sonne?",
+      "answer": [
+        "Erde–Mond: etwa 384’400 km. Erde–Sonne: etwa 149,6 Millionen km, rund eine astronomische Einheit. Die Abstände verändern sich während der Umläufe."
+      ],
+      "pages": "A 5, 7",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [
+        "mond",
+        "erde"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S09",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Wie lange braucht Licht von der Sonne zur Erde?",
+      "answer": [
+        "Mit c ≈ 300’000 km/s gilt t = s ÷ v = 149’600’000 ÷ 300’000 ≈ 499 s, also etwa 8 Minuten 19 Sekunden."
+      ],
+      "pages": "A 5",
+      "origin": "Überlegungsaufgabe Lichtlaufzeit",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S10",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Wie lange braucht Licht von der Erde zum Mond?",
+      "answer": [
+        "384’400 km ÷ 300’000 km/s ≈ 1,28 Sekunden für einen Weg. Für Hin- und Rückweg etwa 2,56 Sekunden."
+      ],
+      "pages": "A 5",
+      "origin": "Überlegungsaufgabe Lichtlaufzeit",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S11",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Was ist ein Lichtjahr?",
+      "answer": [
+        "Eine Entfernung: die Strecke, die Licht in einem Jahr zurücklegt, ungefähr 9,46 Billionen Kilometer. Es ist keine Zeiteinheit."
+      ],
+      "pages": "A 8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S12",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Warum ist der Blick in die Ferne zugleich ein Blick in die Vergangenheit?",
+      "answer": [
+        "Licht braucht Zeit. Sehen wir ein Objekt in zwei Millionen Lichtjahren Entfernung, beobachten wir Licht, das ungefähr vor zwei Millionen Jahren ausgesendet wurde."
+      ],
+      "pages": "A 8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S13",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "basis",
+      "question": "Wie erzeugt die Sonne ihre Energie?",
+      "answer": [
+        "In ihrem Kern verschmilzt Wasserstoff zu Helium. Dabei wird Energie frei. Die Sonne besteht überwiegend aus Wasserstoff und Helium."
+      ],
+      "pages": "A 5",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [
+        "sonne"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S14",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Was zeigt das Modell mit einer 1 m grossen Sonne?",
+      "answer": [
+        "Beim Massstab 1 : 1,4 Milliarden ist die Erde etwa 9,1 mm gross und rund 107 m von der Sonne entfernt. Neptun liegt rund 3,2 km entfernt. Die Abstände sind im Vergleich zu den Körpern gewaltig."
+      ],
+      "pages": "A 8",
+      "origin": "Tabelle 2",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S15",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "profi",
+      "question": "Rechne im Massstab 1 : 1,4 Milliarden eine Strecke von 149,6 Millionen km um.",
+      "answer": [
+        "149’600’000 km ÷ 1’400’000’000 = 0,10686 km = 106,86 m. Erst die Einheiten vereinheitlichen, dann durch die Massstabszahl teilen."
+      ],
+      "pages": "A 8",
+      "origin": "Modellrechnung",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S16",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Warum sind Planetenbilder oft nicht in jeder Hinsicht massstabsgetreu?",
+      "answer": [
+        "Wären Durchmesser und Entfernungen im selben kleinen Bild korrekt skaliert, wären die Planeten kaum zu erkennen. Prüfe deshalb getrennt den Massstab der Körper und jenen der Abstände."
+      ],
+      "pages": "A 6–8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S17",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "profi",
+      "question": "Welche Angaben im Sonnensystemtext sollte man nicht unkritisch auswendig lernen?",
+      "answer": [
+        "Die Zahl bekannter Monde verändert sich; eine undatierte feste Zahl ist ungeeignet. Die Tabelle stammt von 1999. Jupiter ist im Durchmesser ungefähr elfmal, Saturn ungefähr neunmal so gross wie die Erde. Pluto ist ein Zwergplanet."
+      ],
+      "pages": "A 7–8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "Der Text rundet teilweise zu stark und verwendet alte Bezeichnungen. Die Lernkartei vermeidet eine schnell veraltende Mondzahl.",
+      "links": [
+        "system"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "S18",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "vertieft",
+      "question": "Wie lange braucht Sonnenlicht zu Pluto, wenn man mit den 5’966 Mio. km der Tabelle rechnet?",
+      "answer": [
+        "5’966’000’000 ÷ 300’000 = 19’886,7 s ≈ 5 h 31 min. Das ist ein Rechenwert zur alten Tabelle, keine konstante tatsächliche Entfernung."
+      ],
+      "pages": "A 7",
+      "origin": "Lückentext / Tabelle 1",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "S19",
+      "topic": "Sonne & Sonnensystem",
+      "goals": [
+        "L03"
+      ],
+      "level": "profi",
+      "question": "Warum ist eine pauschale «Grösse des Universums» problematisch?",
+      "answer": [
+        "Man muss das beobachtbare Universum vom möglicherweise viel grösseren gesamten Universum unterscheiden. Ausserdem ist zu klären, ob Radius oder Durchmesser gemeint ist. Die undifferenzierte Zahl im Dossier ist daher keine geeignete eindeutige Lernantwort."
+      ],
+      "pages": "A 8",
+      "origin": "Sonne & Sonnensystem",
+      "note": "Begriffsprüfung statt Übernahme einer unklaren Zahl.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "R01",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "Mit dem Velo um die Erde: 40’000 km und 100 km pro Tag. Wie lange?",
+      "answer": [
+        "40’000 km ÷ 100 km/Tag = 400 Tage. Das Modell berücksichtigt weder Ozeane noch Pausen."
+      ],
+      "pages": "A 5",
+      "origin": "Quiz Kennzahlen 01",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R02",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "Zu Fuss um die Erde: 5 km/h, 8 Stunden pro Tag, 40’000 km. Wie lange?",
+      "answer": [
+        "Pro Tag: 5 × 8 = 40 km. Dauer: 40’000 ÷ 40 = 1’000 Tage, rund 2,74 Jahre."
+      ],
+      "pages": "A 5",
+      "origin": "Quiz Kennzahlen 02",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R03",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "11’000 m Tiefe bei 1,5 m/s: Wie lange dauert der Abstieg?",
+      "answer": [
+        "t = 11’000 ÷ 1,5 = 7’333,3 s. Das sind etwa 122,2 Minuten oder 2 h 2 min 13 s."
+      ],
+      "pages": "A 5",
+      "origin": "Quiz Kennzahlen 03",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R04",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "40’000 km Erdumrundung bei 900 km/h: Wie lange dauert der Flug?",
+      "answer": [
+        "40’000 ÷ 900 = 44,44 h, also etwa 44 h 27 min. Konstante Geschwindigkeit und keine Zwischenlandungen sind Modellannahmen."
+      ],
+      "pages": "A 5",
+      "origin": "Quiz Kennzahlen 04",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R05",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "Wie viele Everests ergeben einen Erddurchmesser von 12’742 km? Rechne mit 8’849 m Höhe.",
+      "answer": [
+        "8’849 m = 8,849 km. 12’742 ÷ 8,849 ≈ 1’440 Everest-Höhen. Mit dem Äquatordurchmesser ergibt sich ein geringfügig anderer Wert."
+      ],
+      "pages": "A 5",
+      "origin": "Quiz Kennzahlen 05",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R06",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "Eine Platte bewegt sich 5 cm pro Jahr. Welche Strecke ergibt das in 1 Mio. Jahren?",
+      "answer": [
+        "5 × 1’000’000 = 5’000’000 cm = 50’000 m = 50 km."
+      ],
+      "pages": "A 5",
+      "origin": "Quiz Kennzahlen 06",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R07",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "Wie viele 105 m lange Fussballfelder passen um den 40’075 km langen Äquator?",
+      "answer": [
+        "40’075 km = 40’075’000 m. Division durch 105 ergibt rund 381’667 Feldlängen. Mit gerundeten 40’000 km wären es rund 380’952."
+      ],
+      "pages": "A 5",
+      "origin": "Quiz Kennzahlen 07",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R08",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "ISS: Bahnumfang 42’500 km, Geschwindigkeit 28’000 km/h. Umlaufdauer und Umläufe pro Tag?",
+      "answer": [
+        "42’500 ÷ 28’000 = 1,518 h ≈ 91,1 Minuten. 24 ÷ 1,518 ≈ 15,8 Umläufe pro Tag."
+      ],
+      "pages": "A 5–6",
+      "origin": "Quiz Kennzahlen 08",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R09",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "profi",
+      "question": "Tsunami: 8’200 km Strecke bei 800 km/h. Wie lange?",
+      "answer": [
+        "8’200 ÷ 800 = 10,25 Stunden = 10 h 15 min. Die reale Geschwindigkeit hängt von der Wassertiefe ab."
+      ],
+      "pages": "A 6",
+      "origin": "Quiz Kennzahlen 09",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "R10",
+      "topic": "Rechnen mit Erdgrössen",
+      "goals": [
+        "L04"
+      ],
+      "level": "vertieft",
+      "question": "Welche Grundformeln helfen bei den Rechenaufgaben?",
+      "answer": [
+        "Geschwindigkeit v = s ÷ t; Zeit t = s ÷ v; Strecke s = v × t. Achte auf gleiche Einheiten: 1 km = 1’000 m, 1 h = 3’600 s. Dezimale Stunden sind nicht Stunden und Minuten: 0,25 h = 15 min."
+      ],
+      "pages": "A 5–6; B 8",
+      "origin": "Rechnen mit Erdgrössen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H01",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "Was bedeuten Orient und Okzident? Wo steht die Mittagssonne in Mitteleuropa?",
+      "answer": [
+        "Orient bezeichnet den Osten bzw. das Morgenland, Okzident den Westen bzw. das Abendland. Bei ihrem täglichen Höchststand steht die Sonne in Mitteleuropa im Süden."
+      ],
+      "pages": "B 1",
+      "origin": "Himmelsrichtungen & Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H02",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "Wie werden die vier Hemisphären abgegrenzt?",
+      "answer": [
+        "Der Äquator trennt Nord- und Südhalbkugel. Nullmeridian und 180°-Meridian begrenzen Ost- und Westhalbkugel. Ostlängen liegen auf der östlichen, Westlängen auf der westlichen Hemisphäre."
+      ],
+      "pages": "B 1–2",
+      "origin": "Himmelsrichtungen & Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H03",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "Welche Hemisphäre hat mehr Land, und welche zwei Kontinente liegen ganz südlich des Äquators?",
+      "answer": [
+        "Die Nordhalbkugel besitzt mehr Landfläche. Australien und Antarktika liegen vollständig südlich des Äquators. Südamerika und Afrika werden vom Äquator geschnitten."
+      ],
+      "pages": "B 1",
+      "origin": "Hemisphären, Fragen 1–2",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H04",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "Welche liegen östlich von Greenwich: Barcelona, Bordeaux, New York, Paris, Lima, Wellington, Hongkong, Honolulu?",
+      "answer": [
+        "Barcelona, Paris, Wellington und Hongkong liegen auf der östlichen Hemisphäre. Bordeaux, New York, Lima und Honolulu liegen westlich von Greenwich."
+      ],
+      "pages": "B 1",
+      "origin": "Hemisphären, Frage 3",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H05",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "Welche liegen südlich: Kairo, Rio, Kalkutta, Johannesburg, Canberra, Miami, Antananarivo, Bogotá?",
+      "answer": [
+        "Rio de Janeiro, Johannesburg, Canberra und Antananarivo liegen auf der Südhalbkugel. Die anderen genannten Städte liegen auf der Nordhalbkugel."
+      ],
+      "pages": "B 1",
+      "origin": "Hemisphären, Frage 4",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H06",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Halbkugeln liegt der grösste Teil Afrikas und Südamerikas?",
+      "answer": [
+        "Afrika liegt überwiegend nördlich des Äquators und östlich von Greenwich. Südamerika liegt überwiegend südlich des Äquators und vollständig auf der westlichen Hemisphäre."
+      ],
+      "pages": "B 1",
+      "origin": "Hemisphären, Fragen 5–6",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H07",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "vertieft",
+      "question": "Auf welcher Längen-Hemisphäre liegen Europa und Russland überwiegend?",
+      "answer": [
+        "Beide überwiegend auf der östlichen Hemisphäre. Ein kleiner Teil Russlands reicht über den 180°-Meridian in die westliche Hemisphäre. Politische Begriffe wie «der Westen» bezeichnen etwas anderes."
+      ],
+      "pages": "B 1",
+      "origin": "Hemisphären, Fragen 7–8",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H08",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Jerusalem?",
+      "answer": [
+        "Jerusalem liegt in den Hemisphären Nord und Ost. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H09",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Madrid?",
+      "answer": [
+        "Madrid liegt in den Hemisphären Nord und West. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H10",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Wellington?",
+      "answer": [
+        "Wellington liegt in den Hemisphären Süd und Ost. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H11",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Jakarta?",
+      "answer": [
+        "Jakarta liegt in den Hemisphären Süd und Ost. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H12",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Honolulu?",
+      "answer": [
+        "Honolulu liegt in den Hemisphären Nord und West. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H13",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Lima?",
+      "answer": [
+        "Lima liegt in den Hemisphären Süd und West. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H14",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Nairobi?",
+      "answer": [
+        "Nairobi liegt in den Hemisphären Süd und Ost. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H15",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Tokyo?",
+      "answer": [
+        "Tokyo liegt in den Hemisphären Nord und Ost. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H16",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Havanna?",
+      "answer": [
+        "Havanna liegt in den Hemisphären Nord und West. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H17",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "basis",
+      "question": "In welchen Hemisphären liegt Dakar?",
+      "answer": [
+        "Dakar liegt in den Hemisphären Nord und West. Entscheidend sind Breite relativ zum Äquator und Länge relativ zu Greenwich."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: Hemisphären",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H18",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "vertieft",
+      "question": "Welche Stadt liegt südlicher: London/Hamburg, Zürich/Toronto, Rom/Madrid, Hongkong/Mumbai?",
+      "answer": [
+        "London; Toronto; Madrid; Mumbai. Auf der Nordhalbkugel bedeutet der kleinere nördliche Breitengrad die südlichere Lage."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: südlicher",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "H19",
+      "topic": "Himmelsrichtungen & Hemisphären",
+      "goals": [
+        "L05"
+      ],
+      "level": "vertieft",
+      "question": "Welche Stadt liegt östlicher: Zürich/Tunis, Moskau/Jerusalem, Port-au-Prince/Santiago, Istanbul/Pretoria?",
+      "answer": [
+        "Tunis; Moskau; Santiago de Chile; Istanbul. Bei westlichen Längen ist die kleinere absolute Gradzahl näher an Greenwich und damit östlicher."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 3: östlicher",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K01",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "basis",
+      "question": "Was messen geografische Breite und Länge?",
+      "answer": [
+        "Breite misst den Winkelabstand vom Äquator nach Norden oder Süden (0° bis 90°). Länge misst den Winkelabstand vom Nullmeridian nach Osten oder Westen (0° bis 180°)."
+      ],
+      "pages": "B 1–4",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K02",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "basis",
+      "question": "Was unterscheidet Breitenkreise und Meridiane?",
+      "answer": [
+        "Breitenkreise verlaufen parallel zum Äquator und werden zu den Polen kleiner. Meridiane verlaufen von Pol zu Pol und sind gleich lange Halbkreise; jeweils zwei gegenüberliegende bilden einen ganzen Längenkreis."
+      ],
+      "pages": "B 1–3",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "Ein Meridian ist präzise ein Halbkreis, auch wenn das Dossier «Kreis» und «Meridian» teilweise gleichsetzt.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "K03",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "basis",
+      "question": "Wo liegt der Nullmeridian und warum gerade dort?",
+      "answer": [
+        "Der historische Nullmeridian verläuft durch Greenwich bei London. Seine Wahl ist eine internationale Konvention von 1884, keine naturgegebene Grenze."
+      ],
+      "pages": "B 2–3",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K04",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "basis",
+      "question": "Wie liest du 52° N / 50° E?",
+      "answer": [
+        "52 Grad nördliche Breite und 50 Grad östliche Länge. Zuerst wird die Breite, dann die Länge angegeben. Der Punkt liegt auf der Nord- und Osthalbkugel."
+      ],
+      "pages": "B 4",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K05",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "basis",
+      "question": "Wie hängen Grad, Winkelminuten und Winkelsekunden zusammen?",
+      "answer": [
+        "1° = 60′ und 1′ = 60″. Deshalb gilt 1° = 3’600″. Winkelminuten beschreiben einen Winkel und sind hier keine Zeitminuten."
+      ],
+      "pages": "B 4",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K06",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "vertieft",
+      "question": "Wandle 47,3° N und 9,083333° E in Grad und Minuten um.",
+      "answer": [
+        "47,3° = 47° + 0,3 × 60′ = 47°18′ N. 9,083333° ≈ 9°05′ E. Das sind die in der Postenaufgabe verwendeten Koordinaten der Kanti."
+      ],
+      "pages": "B 4, 7",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K07",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "vertieft",
+      "question": "Wandle 48°51′04″ N und 2°20′09″ E in Dezimalgrade um.",
+      "answer": [
+        "48 + 51/60 + 4/3’600 ≈ 48,851111° N. 2 + 20/60 + 9/3’600 ≈ 2,335833° E."
+      ],
+      "pages": "B 4",
+      "origin": "Louvre-Beispiel",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K08",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "profi",
+      "question": "Wandle 48,86° N und 2,34° E in Grad, Minuten und Sekunden um.",
+      "answer": [
+        "48,86° = 48°51′36″ N; 2,34° = 2°20′24″ E. Erst den Dezimalrest mit 60 multiplizieren, dann den Rest der Minuten nochmals mit 60."
+      ],
+      "pages": "B 4",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "Die gerundeten Paris-Werte sind nicht identisch mit den genaueren Louvre-Koordinaten im selben Text.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "K09",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "vertieft",
+      "question": "Wie bestimmt man die Koordinaten eines Ortes zwischen Gradnetzlinien?",
+      "answer": [
+        "Miss seinen relativen Abstand zwischen zwei benachbarten Breitenlinien und getrennt zwischen zwei Meridianen. Addiere den entsprechenden Anteil des Gradintervalls zum Ausgangswert. Rechne den Dezimalrest anschliessend in Minuten und Sekunden um."
+      ],
+      "pages": "B 4–5",
+      "origin": "Altdorf und Chur: Methode",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K10",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "profi",
+      "question": "Ein Ort liegt 30 % von 46° N Richtung 47° N und 60 % von 8° E Richtung 9° E. Welche Koordinaten?",
+      "answer": [
+        "46,3° N / 8,6° E = 46°18′ N / 8°36′ E. Die beiden Richtungen werden getrennt interpoliert."
+      ],
+      "pages": "B 4–5",
+      "origin": "Zusatzübung zur Kartenmessung",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K11",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "profi",
+      "question": "Welche Grössenordnung sollte die Kartenmessung für Altdorf und Chur ergeben?",
+      "answer": [
+        "Altdorf UR liegt ungefähr bei 46,88° N / 8,64° E, Chur ungefähr bei 46,85° N / 9,53° E. Das sind gerundete Orientierungswerte; eine exakte Lösung benötigt einen eindeutig gewählten Punkt, etwa Bahnhof oder Ortszentrum."
+      ],
+      "pages": "B 4–5",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "Kein fingierter Messwert aus der Abbildung: Kartenmassstab, Messgenauigkeit und Bezugspunkt begrenzen das Resultat.",
+      "links": [
+        "karte"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "K12",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "profi",
+      "question": "Wo liegt der Gegenpunkt von 47°18′ N / 9°05′ E?",
+      "answer": [
+        "47°18′ S / 170°55′ W. Breite: Nord wird Süd. Länge: 180° − 9°05′ = 170°55′, Ost wird West. Der Punkt liegt im Südpazifik südöstlich von Neuseeland, dem nächstgelegenen Staat."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 4: Tiefbau an der Kanti",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K13",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "profi",
+      "question": "Wie gross ist der Abstand zwischen zwei ganzgradigen Breitenkreisen? Und zwischen zwei Bogenminuten Breite?",
+      "answer": [
+        "Mit 40’000 km Meridianumfang: 40’000 ÷ 360 ≈ 111,11 km pro Grad. Pro Winkelminute: 111,11 ÷ 60 ≈ 1,852 km. Das ist näherungsweise eine Seemeile."
+      ],
+      "pages": "B 8",
+      "origin": "Posten 6",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K14",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "profi",
+      "question": "Wie schnell bewegt sich ein Punkt am Äquator durch die Erdrotation?",
+      "answer": [
+        "40’000 km ÷ 24 h ≈ 1’667 km/h, mit genauerem Äquatorumfang rund 1’670 km/h. Das passt zur Grössenordnung eines Überschall-Düsenjets."
+      ],
+      "pages": "B 8",
+      "origin": "Posten 7",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K15",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "vertieft",
+      "question": "Ist ein Längengrad überall ungefähr 111 km breit?",
+      "answer": [
+        "Nein. Am Äquator ungefähr 111 km; zu den Polen nimmt der Abstand zwischen Meridianen ab. Die Näherung lautet 111 km × cos(Breite). An den Polen treffen alle Meridiane zusammen."
+      ],
+      "pages": "B 1–3, 8",
+      "origin": "Transfer aus dem Gradnetz",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "K16",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "vertieft",
+      "question": "Welche ungefähren Koordinaten haben Athen, Warschau, Lissabon und Palermo?",
+      "answer": [
+        "Athen: 37°59′ N / 23°44′ E; Warschau: 52°14′ N / 21°01′ E; Lissabon: 38°43′ N / 9°08′ W; Palermo: 38°07′ N / 13°22′ E."
+      ],
+      "pages": "B 8",
+      "origin": "Posten 5",
+      "note": "Gerundete Stadtzentrumswerte zur Orientierung. Der im Auftrag verwendete Atlas-Ausschnitt fehlt; keine sekundengenaue Musterlösung aus dieser Karte.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "K17",
+      "topic": "Gradnetz & Koordinaten",
+      "goals": [
+        "L06"
+      ],
+      "level": "vertieft",
+      "question": "Wie viele Breiten und Längen gibt es eigentlich?",
+      "answer": [
+        "Die Schulunterteilung verwendet 90° nach Norden und Süden sowie 180° nach Osten und Westen. Zwischen ganzzahligen Werten sind beliebig viele Zwischenwerte möglich; das Gradnetz besteht nicht nur aus einer festen Anzahl Linien."
+      ],
+      "pages": "B 4",
+      "origin": "Gradnetz & Koordinaten",
+      "note": "180° E und 180° W bezeichnen denselben Meridian. Bei der Anzahl ganzzahliger Linien muss man Äquator, Pole und Doppelzählungen beachten.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "P01",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 55°45′ N / 37°37′ E gesucht (Theater)?",
+      "answer": [
+        "Gesucht ist das Bolschoi-Theater in Moskau; im Rätsel passt «Bolschoi»."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P02",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 51°30′ N / 0° gesucht (Observatorium)?",
+      "answer": [
+        "Greenwich bei London, bekannt für das historische Royal Observatory und den Nullmeridian."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P03",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 37°58′ N / 23°44′ E gesucht (Tempelanlage)?",
+      "answer": [
+        "Die Akropolis in Athen; im Kreuzworträtsel passt «Akropolis»."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P04",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Land ist bei 42°30′ N / 1°30′ E gesucht (Land)?",
+      "answer": [
+        "Andorra, der kleine Staat in den Pyrenäen zwischen Frankreich und Spanien."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P05",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 45° N / 35° E gesucht (Halbinsel)?",
+      "answer": [
+        "Die Krim am Schwarzen Meer. Die Aufgabe fragt nach dem geografischen Namen der Halbinsel."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P06",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 40° N / 4° E gesucht (Insel)?",
+      "answer": [
+        "Menorca, eine Insel der Balearen. Die Gradangaben sind grob gerundet."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P07",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 47° N / 8°30′ E gesucht (Ort)?",
+      "answer": [
+        "Im Rätsel wird «Brunnen» erwartet (sieben Kästchen). Brunnen liegt ungefähr bei 47,00° N / 8,61° E; die angegebene Länge ist grob gerundet."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "Aus Koordinaten, Bild und Kästchenzahl erschlossen; keine mitgelieferte Lösungsliste.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "P08",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 52°12′ N / 5°58′ E gesucht (Stadt)?",
+      "answer": [
+        "Apeldoorn in den Niederlanden; neun Buchstaben im Rätsel."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P09",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 45° N / 60° E gesucht (Salzsee)?",
+      "answer": [
+        "Der Aralsee in Zentralasien. Die Koordinate und das Bild beziehen sich auf das historische Seegebiet; der See ist stark geschrumpft."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P10",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 60° N / 1° W gesucht (Inselgruppe)?",
+      "answer": [
+        "Die Shetland-Inseln nördlich von Schottland. Im Rätsel ist der Bindestrich vorgegeben."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P11",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 61° N / 10°28′ E gesucht (Wintersportort)?",
+      "answer": [
+        "Lillehammer in Norwegen, Austragungsort der Olympischen Winterspiele 1994."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P12",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 63°40′ N / 19° W gesucht (Vulkan)?",
+      "answer": [
+        "Katla in Island. Die Koordinate ist gerundet; der Smithsonian-Katalog nennt 63,633° N / 19,083° W."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "",
+      "links": [
+        "katla"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "P13",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Tour d’Europe: Welches Ziel ist bei 44° N / 10° E gesucht (Stadt)?",
+      "answer": [
+        "Carrara in Italien; die Stadt ist unter anderem durch Marmor bekannt."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Tour d’Europe",
+      "note": "Aus Koordinaten, Bild und Kästchenzahl erschlossen; keine mitgelieferte Lösungsliste.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "P14",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "profi",
+      "question": "Welches Lösungswort ergibt die Tour d’Europe?",
+      "answer": [
+        "Die markierten Buchstaben lassen sich zu «MERIDIAN» ordnen. Kontrolle: Aralsee liefert A; Shetland-Inseln D und I; Lillehammer I und M; Andorra R; Menorca E; Brunnen N."
+      ],
+      "pages": "B 6",
+      "origin": "Posten 1: Lösungswort",
+      "note": "Aus dem sichtbaren Raster und den Ortsnamen rekonstruiert.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "P15",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Welche drei Breitenkreise sind in Posten 2 gesucht?",
+      "answer": [
+        "Westlicher Grenzabschnitt USA/Kanada: 49° N; Tennessee/Alabama: ungefähr 35° N; Ägypten/Sudan: im gemeinten geradlinigen Abschnitt 22° N."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 2: Breitenkreise",
+      "note": "Gemeint sind idealisierte Grenzabschnitte, nicht sämtliche Grenzen der genannten Gebiete.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "P16",
+      "topic": "Atlas-Posten",
+      "goals": [
+        "L07"
+      ],
+      "level": "vertieft",
+      "question": "Welche drei Meridiane ergeben mit den Breiten aus Posten 2 die Summe 444°?",
+      "answer": [
+        "Alaska/Kanada: 141° W; westlicher gerader Abschnitt Usbekistan/Kasachstan: 56° E; Indonesien/Papua-Neuguinea: 141° E. Kontrolle: 49 + 35 + 22 + 141 + 56 + 141 = 444."
+      ],
+      "pages": "B 7",
+      "origin": "Posten 2: Meridiane",
+      "note": "Die Grenze auf Neuguinea weicht beim Fly River vom Meridian ab. Die Prüfsumme addiert Beträge; Himmelsrichtungen bleiben getrennt.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "J01",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Was ist der Unterschied zwischen Rotation und Revolution?",
+      "answer": [
+        "Rotation ist die Drehung um die eigene Achse und erklärt den täglichen Wechsel von Tag und Nacht. Revolution ist der Umlauf der Erde um die Sonne in ungefähr einem Jahr."
+      ],
+      "pages": "A 9; B 9–10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J02",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Um wie viel ist die Erdachse geneigt?",
+      "answer": [
+        "Etwa 23,4° gegenüber der Senkrechten auf der Erdbahnebene. Gegenüber der Ebene selbst beträgt der Winkel etwa 66,6°. Im Unterricht wird häufig mit 23,5° und 66,5° gerundet."
+      ],
+      "pages": "A 9; B 9–10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [
+        "achse"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J03",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "vertieft",
+      "question": "Wie entstehen die Jahreszeiten?",
+      "answer": [
+        "Die geneigte Erdachse behält während eines Umlaufs näherungsweise ihre Richtung im Raum bei. Dadurch erhält jede Halbkugel zeitweise steilere Sonnenstrahlen und längere Tage: Sommer. Auf der anderen Halbkugel ist gleichzeitig Winter."
+      ],
+      "pages": "A 9–10; B 9–10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J04",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Weshalb ist die Nähe zur Sonne nicht die Ursache unseres Sommers?",
+      "answer": [
+        "Die Erde ist Anfang Januar im Perihel der Sonne am nächsten und Anfang Juli im Aphel am weitesten entfernt. Auf der Nordhalbkugel ist es dabei Winter bzw. Sommer. Entscheidend sind Achsneigung, Sonnenhöhe und Tageslänge."
+      ],
+      "pages": "B 9",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J05",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Was bedeuten Perihel und Aphel?",
+      "answer": [
+        "Perihel ist der sonnennächste, Aphel der sonnenfernste Punkt einer Umlaufbahn. Die genauen Kalendertage schwanken von Jahr zu Jahr; als Merkwerte gelten Anfang Januar und Anfang Juli."
+      ],
+      "pages": "B 9",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J06",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "vertieft",
+      "question": "Was ist mit Ekliptik gemeint?",
+      "answer": [
+        "Astronomisch ist die Ekliptik die scheinbare jährliche Sonnenbahn am Himmel. Die Erdbahnebene wird Ekliptikebene genannt; das Dossier verwendet «Ekliptik» vereinfacht auch für diese Ebene bzw. Bahn."
+      ],
+      "pages": "A 9; B 9",
+      "origin": "Jahreszeiten",
+      "note": "Eine Bahnkurve und die Ebene, in der sie liegt, sind nicht identisch.",
+      "links": [
+        "achse"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "J07",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "vertieft",
+      "question": "Warum erwärmt steile Sonneneinstrahlung eine Fläche stärker?",
+      "answer": [
+        "Die gleiche Strahlungsmenge verteilt sich bei steilem Einfall auf eine kleinere Bodenfläche. Bei flachem Einfall verteilt sie sich auf eine grössere Fläche. Auch die Tageslänge beeinflusst die tägliche Energiemenge."
+      ],
+      "pages": "B 9",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J08",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Was bedeutet Zenitstand?",
+      "answer": [
+        "Die Sonne steht senkrecht über dem Beobachtungsort, also 90° über dem Horizont. Ein senkrechter Stab wirft dann idealisiert keinen seitlichen Schatten."
+      ],
+      "pages": "B 9–10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J09",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Wo kann die Sonne im Zenit stehen?",
+      "answer": [
+        "Nur zwischen den Wendekreisen, ungefähr 23,4° N und 23,4° S, einschliesslich ihrer Grenzen. In der Schweiz erreicht die Sonne nie den Zenit."
+      ],
+      "pages": "B 9–10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J10",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Benenne die Breitenkreise A bis E von Norden nach Süden und ihre Winkel.",
+      "answer": [
+        "Nördlicher Polarkreis: ca. 66,6° N; nördlicher Wendekreis: ca. 23,4° N; Äquator: 0°; südlicher Wendekreis: ca. 23,4° S; südlicher Polarkreis: ca. 66,6° S."
+      ],
+      "pages": "B 10",
+      "origin": "Beschriftung A–E von Nord nach Süd",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": "breitenkreise.svg",
+      "imageAlt": "Erdkugel mit fünf Breitenkreisen, von Norden nach Süden A bis E.",
+      "imageCaption": "Eigene Skizze: Benenne A bis E und die zugehörigen Winkel."
+    },
+    {
+      "id": "J11",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Wo steht die Sonne zu den Sonnenwenden und Tagundnachtgleichen im Zenit?",
+      "answer": [
+        "Um den 20./21. März und 22./23. September über dem Äquator; um den 20./21. Juni über dem nördlichen Wendekreis; um den 21./22. Dezember über dem südlichen Wendekreis."
+      ],
+      "pages": "B 9–10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J12",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Was sind Polartag und Polarnacht?",
+      "answer": [
+        "Polartag bzw. Mitternachtssonne: Die Sonne geht mindestens 24 Stunden nicht unter. Polarnacht: Die Sonne steigt mindestens 24 Stunden nicht über den Horizont. Dämmerung kann dennoch auftreten."
+      ],
+      "pages": "B 10",
+      "origin": "Jahreszeiten",
+      "note": "Polarnacht bedeutet nicht zwingend 24 Stunden völlige Dunkelheit.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "J13",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "vertieft",
+      "question": "Warum liegen die Polarkreise bei ungefähr 66,6°?",
+      "answer": [
+        "90° − 23,4° Achsneigung = 66,6°. Im vereinfachten geometrischen Modell beginnt hier zur jeweiligen Sonnenwende mindestens ein ganzer Tag ohne Sonnenuntergang bzw. Sonnenaufgang."
+      ],
+      "pages": "B 10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J14",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "vertieft",
+      "question": "Wie lange dauern Polartag und Polarnacht an den Polen?",
+      "answer": [
+        "Jeweils ungefähr ein halbes Jahr. Am Nordpol herrscht ungefähr von März bis September Polartag, am Südpol im gleichen Zeitraum Polarnacht. Brechung und Sonnenscheibengrösse verschieben die beobachteten Grenzen."
+      ],
+      "pages": "B 10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J15",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Wann beginnen die astronomischen Jahreszeiten auf der Nordhalbkugel?",
+      "answer": [
+        "Frühling um 20./21. März, Sommer um 20./21. Juni, Herbst um 22./23. September und Winter um 21./22. Dezember. Jede Jahreszeit endet mit dem Beginn der nächsten; im Süden sind sie entgegengesetzt."
+      ],
+      "pages": "B 10",
+      "origin": "Jahreszeiten",
+      "note": "Die Daten variieren mit Jahr und Zeitzone. Meteorologische Jahreszeiten beginnen dagegen jeweils am Monatsersten.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "J16",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "basis",
+      "question": "Was bedeutet Äquinoktium, und wann sind die Tage am längsten oder kürzesten?",
+      "answer": [
+        "Äquinoktium bedeutet Tagundnachtgleiche im März und September. In Mitteleuropa ist der Tag zur Juni-Sonnenwende am längsten und zur Dezember-Sonnenwende am kürzesten."
+      ],
+      "pages": "B 10",
+      "origin": "Jahreszeiten",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "J17",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "profi",
+      "question": "Sind Tag und Nacht am Äquinoktium beobachtet exakt zwölf Stunden lang?",
+      "answer": [
+        "Im geometrischen Modell ungefähr ja. Beobachtet wirken Lichtbrechung und die Ausdehnung der Sonnenscheibe: Sonnenaufgang zählt ab dem ersten sichtbaren Rand. Deshalb ist der helle Tag meist etwas länger."
+      ],
+      "pages": "B 10",
+      "origin": "Jahreszeiten",
+      "note": "«Gleich lang» ist eine Modellnäherung.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "J18",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "vertieft",
+      "question": "Weshalb gibt es Schaltjahre?",
+      "answer": [
+        "Das tropische Jahr dauert etwa 365,2422 Tage, nicht genau 365. Der zusätzliche Tag gleicht die Differenz aus: durch 4 teilbare Jahre sind Schaltjahre, Jahrhundertjahre nur dann, wenn sie auch durch 400 teilbar sind."
+      ],
+      "pages": "B 9",
+      "origin": "Jahreszeiten",
+      "note": "«Alle vier Jahre» lässt die Jahrhundertregel weg: 2000 war ein Schaltjahr, 2100 wird keines sein.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "J19",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "profi",
+      "question": "Was beschreibt der Zeitraum von etwa 26’000 Jahren bei der Erdachse?",
+      "answer": [
+        "Die Präzession: Die Richtung der Erdachse vollführt langfristig eine Kreiselbewegung. Das ist nicht dasselbe wie die periodische Veränderung des Neigungswinkels. Für die Erklärung eines einzelnen Jahres bleibt die Achsenrichtung näherungsweise konstant."
+      ],
+      "pages": "A 9",
+      "origin": "Jahreszeiten",
+      "note": "Das Dossier vermischt Achsenrichtung und Neigungswinkel.",
+      "links": [
+        "achse"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "J20",
+      "topic": "Jahreszeiten",
+      "goals": [
+        "L08"
+      ],
+      "level": "profi",
+      "question": "Berechne die Mittagssonnenhöhe bei 47° N zur Tagundnachtgleiche sowie im Juni und Dezember.",
+      "answer": [
+        "Näherung: Höhe = 90° − |Breite − Sonnendeklination|. Tagundnachtgleiche: 43°. Juni mit +23,4°: 66,4°. Dezember mit −23,4°: 19,6°."
+      ],
+      "pages": "B 9–10",
+      "origin": "Vertiefende Anwendung der Geometrie",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z01",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "basis",
+      "question": "Welche Winkelgeschwindigkeit ergibt sich aus 360° in 24 Stunden?",
+      "answer": [
+        "15° pro Stunde. Für 1° benötigt die Drehung 4 Minuten; 1′ Länge entspricht 4 Sekunden mittlerer Ortszeit."
+      ],
+      "pages": "B 11",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z02",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "basis",
+      "question": "Was ist die wahre Ortszeit (WOZ)?",
+      "answer": [
+        "Sie richtet sich nach dem tatsächlich beobachteten Sonnenstand. Wenn die Sonne den örtlichen Meridian beim oberen täglichen Durchgang passiert, ist es 12 Uhr wahre Ortszeit."
+      ],
+      "pages": "B 11",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z03",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "vertieft",
+      "question": "Wie unterscheiden sich wahre und mittlere Ortszeit?",
+      "answer": [
+        "Die wahre Ortszeit folgt der realen Sonne. Die mittlere Ortszeit folgt einer gedachten gleichmässig laufenden Sonne. Wegen elliptischer Erdbahn und Achsneigung entstehen im Jahreslauf Unterschiede, die durch die Zeitgleichung beschrieben werden."
+      ],
+      "pages": "B 11",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z04",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "vertieft",
+      "question": "Chur liegt bei 9°31′ E, Solothurn bei 7°31′ E. Welche Ortszeitdifferenz ergibt sich?",
+      "answer": [
+        "Die Längendifferenz ist 2°. 2 × 4 min = 8 Minuten. Chur liegt östlicher und ist in der mittleren Ortszeit 8 Minuten voraus. Beide Orte haben dennoch dieselbe gesetzliche Schweizer Uhrzeit."
+      ],
+      "pages": "B 11",
+      "origin": "Ortszeitrechnung Chur–Solothurn",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z05",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "vertieft",
+      "question": "Bern liegt vereinfacht bei 7,5° E. Wie gross ist seine mittlere Ortszeitdifferenz zu Greenwich?",
+      "answer": [
+        "7,5 × 4 = 30 Minuten. Die mittlere Ortszeit von Bern liegt 30 Minuten vor jener von Greenwich."
+      ],
+      "pages": "B 11",
+      "origin": "Ortszeitrechnung Bern",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z06",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "basis",
+      "question": "Warum gibt es Zeitzonen?",
+      "answer": [
+        "Einheitliche gesetzliche Uhrzeiten erleichtern Fahrpläne, Kommunikation und Verwaltung. Das theoretische Modell hat 24 Zonen zu je 15°. Tatsächliche Grenzen folgen politischen und praktischen Entscheidungen."
+      ],
+      "pages": "B 11–12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z07",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "basis",
+      "question": "Was bedeuten UTC, GMT, WEZ, MEZ und MESZ?",
+      "answer": [
+        "UTC: koordinierte Weltzeit. GMT: Greenwich Mean Time, im Schulrechnen gleicher Stundenoffset wie UTC. WEZ: Westeuropäische Zeit, UTC+0. MEZ: Mitteleuropäische Zeit, UTC+1. MESZ: Mitteleuropäische Sommerzeit, UTC+2."
+      ],
+      "pages": "B 12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z08",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "vertieft",
+      "question": "In Wattwil ist es 12:00 gesetzliche Uhrzeit. Wie spät ist es in UTC, MEZ und MESZ?",
+      "answer": [
+        "Bei Schweizer Winterzeit: UTC/WEZ 11:00, MEZ 12:00, MESZ rechnerisch 13:00. Bei Schweizer Sommerzeit: UTC/WEZ 10:00, MEZ rechnerisch 11:00, MESZ 12:00."
+      ],
+      "pages": "B 12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "Die Aufgabe sagt «Ortszeit». Hier ist ausdrücklich die gesetzliche Uhrzeit gemeint; ohne Jahreszeit gibt es zwei Möglichkeiten.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "Z09",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "profi",
+      "question": "Und wenn mit 12 Uhr in Wattwil wirklich mittlere Ortszeit gemeint ist? Nutze 9°05′ E.",
+      "answer": [
+        "9°05′ × 4 min/Grad = 36 min 20 s Vorsprung gegenüber Greenwich. Bei 12:00 mittlerer Ortszeit in Wattwil ist die mittlere Greenwich-Zeit ungefähr 11:23:40. Bei wahrer Ortszeit braucht man zusätzlich Datum und Zeitgleichung."
+      ],
+      "pages": "B 7, 11–12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "Sonnenzeit und gesetzliche Zonenzeit dürfen nicht gleichgesetzt werden; die Annäherung ignoriert kleine Unterschiede zu UTC.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "Z10",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "vertieft",
+      "question": "Was fällt an der mitteleuropäischen Zeitzone auf?",
+      "answer": [
+        "Sie reicht deutlich über einen idealen 15°-Streifen hinaus. Politische und wirtschaftliche Abstimmung führen dazu, dass weit westlich und östlich gelegene Orte dieselbe gesetzliche Uhrzeit verwenden."
+      ],
+      "pages": "B 12",
+      "origin": "Analyse der MEZ",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z11",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "vertieft",
+      "question": "Warum gibt es halbe und Viertelstunden-Zeitzonen?",
+      "answer": [
+        "Staaten wählen eine zum Land und seiner Geschichte passende Zeit. Beispiele: Indien UTC+5:30, Iran UTC+3:30 und Nepal UTC+5:45. Zeitzonen müssen keine ganzen Stunden auseinanderliegen."
+      ],
+      "pages": "B 12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "",
+      "links": [
+        "asien"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z12",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "profi",
+      "question": "Ist Nordkorea weiterhin eine halbe Stunde gegenüber Südkorea versetzt?",
+      "answer": [
+        "Nein. Nordkorea verwendete ab 2015 UTC+8:30 und kehrte im Mai 2018 zu UTC+9 zurück. Die Frage im Dossier bezieht sich auf eine historische Sonderzone."
+      ],
+      "pages": "B 12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "Historischen Kartenstand von heutigen Regeln trennen. Nepal bleibt ein Beispiel für einen Viertelstundenoffset.",
+      "links": [
+        "asien"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "Z13",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "profi",
+      "question": "Welches Land und welcher Kontinent haben «die meisten Zeitzonen»?",
+      "answer": [
+        "Die Antwort braucht eine Zählregel. Unter zusammenhängenden Staatsgebieten ist Russland mit elf Zonen das typische Schulbeispiel. Mit Überseegebieten wird oft Frankreich genannt. Bei Kontinenten wird meist Asien erwartet; Inselzuordnung und Definition der Zeitzone beeinflussen den Vergleich."
+      ],
+      "pages": "B 12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "Die im Auftrag genannte Atlas-/Buchkarte liegt nicht vor. Ihre konkrete Zählung kann deshalb nicht zuverlässig rekonstruiert werden.",
+      "links": [],
+      "status": "offen",
+      "image": null
+    },
+    {
+      "id": "Z14",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "profi",
+      "question": "Wie viele Zeitzonen haben Grönland und Afrika?",
+      "answer": [
+        "Es gibt ohne Datum und Zählregel keine eindeutige Zahl: Verschiedene Regelgebiete können zeitweise denselben UTC-Offset haben. Inseln und Sommerzeit verändern die Zählung. Grönlands Regeln wurden seit dem Kartenstand verändert."
+      ],
+      "pages": "B 12",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "Die erwartete Zahl muss an der fehlenden Atlas-Karte mit Datum, Inselumfang und Zählweise ermittelt werden. Diese Karte bleibt eine offene Quellenfrage.",
+      "links": [
+        "amerika"
+      ],
+      "status": "offen",
+      "image": null
+    },
+    {
+      "id": "Z15",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "vertieft",
+      "question": "Wie rechnet man zwischen zwei Zeitzonen sicher um?",
+      "answer": [
+        "Zuerst Ortszeit minus UTC-Offset des Ausgangsortes = UTC. Danach UTC plus Zieloffset = Zielzeit. Berücksichtige Datum, Sommerzeit und einen möglichen Tageswechsel."
+      ],
+      "pages": "B 12–15",
+      "origin": "Ortszeit & Zeitzonen",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "Z16",
+      "topic": "Ortszeit & Zeitzonen",
+      "goals": [
+        "L09"
+      ],
+      "level": "profi",
+      "question": "Warum beweist eine ähnliche Zeitzone nicht, dass zwei Orte nahe beieinander liegen?",
+      "answer": [
+        "Zeitzonen folgen vor allem der geografischen Länge und politischen Entscheidungen. Zwei Orte können auf ähnlicher Länge, aber sehr weit auseinander in Nord-Süd-Richtung liegen."
+      ],
+      "pages": "B 11–12",
+      "origin": "Transfer",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T01",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Tokyo?",
+      "answer": [
+        "03:00 am 1. September 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Tokyo verwendet an diesem Datum UTC+9."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Tokyo",
+      "note": "Historischer Termin der Vorlage; die damaligen Sommerzeitregeln sind berücksichtigt.",
+      "links": [
+        "tz"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T02",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Shanghai?",
+      "answer": [
+        "02:00 am 1. September 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Shanghai verwendet an diesem Datum UTC+8."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Shanghai",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T03",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Johannesburg?",
+      "answer": [
+        "20:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Johannesburg verwendet an diesem Datum UTC+2."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Johannesburg",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T04",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Rio de Janeiro?",
+      "answer": [
+        "15:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Rio de Janeiro verwendet an diesem Datum UTC−3."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Rio de Janeiro",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T05",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Lima?",
+      "answer": [
+        "13:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Lima verwendet an diesem Datum UTC−5."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Lima",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T06",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in New York?",
+      "answer": [
+        "14:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; New York verwendet an diesem Datum UTC−4."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: New York",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T07",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Los Angeles?",
+      "answer": [
+        "11:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Los Angeles verwendet an diesem Datum UTC−7."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Los Angeles",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T08",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Anchorage?",
+      "answer": [
+        "10:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Anchorage verwendet an diesem Datum UTC−8."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Anchorage",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T09",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Oslo?",
+      "answer": [
+        "20:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Oslo verwendet an diesem Datum UTC+2."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Oslo",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T10",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "vertieft",
+      "question": "Weltklasse Zürich: 31.8.2023, 20:00 MESZ. Wie spät ist es in Thule / Pituffik?",
+      "answer": [
+        "15:00 am 31. August 2023. Rechnung: 20:00 MESZ = 18:00 UTC; Thule / Pituffik verwendet an diesem Datum UTC−3."
+      ],
+      "pages": "B 12",
+      "origin": "Weltklasse Zürich: Thule / Pituffik",
+      "note": "Historischer Termin der Vorlage; die damaligen Sommerzeitregeln sind berücksichtigt.",
+      "links": [
+        "tz"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T11",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Omsk 18:45, Flugzeit 6 h 40 min, Ziel Jakutsk: Welche Ankunftszeit?",
+      "answer": [
+        "Unter der Annahme Omsk UTC+6 und Jakutsk UTC+9: 18:45 + 6:40 + 3:00 = 04:25 am Folgetag. Die Streckenlänge ist für diese Zeitrechnung nicht nötig."
+      ],
+      "pages": "B 12",
+      "origin": "Flug Omsk–Jakutsk",
+      "note": "Die Vorlage nennt kein Jahr. Verwendet werden die für 2026 geltenden Zonenregeln.",
+      "links": [
+        "tz"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T12",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Abflug Omsk 14:25, Ankunft Jekaterinburg 14:20. Wie lange dauerte der Flug?",
+      "answer": [
+        "Omsk UTC+6, Jekaterinburg UTC+5: Abflug 08:25 UTC, Ankunft 09:20 UTC. Die Flugzeit beträgt 55 Minuten."
+      ],
+      "pages": "B 12",
+      "origin": "Flug Omsk–Jekaterinburg",
+      "note": "Annahme: Ankunft am selben lokalen Tag; Zonenregeln von 2026.",
+      "links": [
+        "tz"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T13",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Anadyr: 3. Juni, 15:00. Wie spät ist es gleichzeitig in der Schweiz?",
+      "answer": [
+        "Mit Anadyr UTC+12 und der Schweiz im Juni UTC+2: 15:00 − 12 h + 2 h = 05:00 am 3. Juni."
+      ],
+      "pages": "B 13",
+      "origin": "Telefonat Anadyr–Schweiz",
+      "note": "Die undatierte Jahresangabe wird mit den Regeln von 2026 ergänzt.",
+      "links": [
+        "tz"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T14",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Petropawlowsk-Kamtschatski 08:15 → Moskau 15:00, fünf Stunden Zwischenhalt: Wie viel reine Flugzeit?",
+      "answer": [
+        "Petropawlowsk-Kamtschatski UTC+12, Moskau UTC+3. Moskauer Ankunft 15:00 entspricht 00:00 am Folgetag am Startort. Gesamtzeit 15 h 45 min, minus 5 h Aufenthalt = 10 h 45 min reine Flugzeit."
+      ],
+      "pages": "B 13",
+      "origin": "Flug via Nowosibirsk",
+      "note": "Gemeint ist ausdrücklich Petropawlowsk-Kamtschatski. Annahme: Moskau-Ankunft am selben lokalen Datum; Regeln von 2026.",
+      "links": [
+        "tz"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T15",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Zürich 12:40 → Moskau 18:45, Strecke 2’600 km. Welche Durchschnittsgeschwindigkeit?",
+      "answer": [
+        "Im Schweizer Sommer (UTC+2, Moskau UTC+3): Flugzeit 5 h 05 min; 2’600 ÷ (5 + 5/60) ≈ 511 km/h. Im Winter (Zürich UTC+1): Flugzeit 4 h 05 min; Geschwindigkeit ≈ 637 km/h."
+      ],
+      "pages": "B 13",
+      "origin": "Geschwindigkeit Zürich–Moskau",
+      "note": "Ohne Datum ist die Vorlage mehrdeutig. Beide Ergebnisse setzen Ankunft am selben lokalen Tag und konstante Zonenregeln wie 2026 voraus.",
+      "links": [
+        "tz"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T16",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Wellington: 1. Januar 2024 um 09:00. Datum und Uhrzeit in San Francisco?",
+      "answer": [
+        "Wellington hat UTC+13, San Francisco UTC−8. 09:00 − 21 h = 12:00 am 31. Dezember 2023."
+      ],
+      "pages": "B 15",
+      "origin": "Datumsrechnung 1",
+      "note": "",
+      "links": [
+        "pazifik",
+        "amerika"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "T17",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Tokyo: Abflug 12. Mai 2024, 12:00. Flugzeit 5 h nach Anchorage. Wann ist die Ankunft?",
+      "answer": [
+        "Tokyo UTC+9: Start 03:00 UTC; plus 5 h = 08:00 UTC am 12. Mai. Anchorage UTC−8: 00:00 am 12. Mai 2024."
+      ],
+      "pages": "B 15",
+      "origin": "Datumsrechnung 2",
+      "note": "Anchorage hat im Mai Sommerzeit. Kein zusätzlicher Tag darf nach der korrekten UTC-Umrechnung nochmals abgezogen werden.",
+      "links": [
+        "amerika",
+        "asien"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "T18",
+      "topic": "Zeitrechnen & Flüge",
+      "goals": [
+        "L10"
+      ],
+      "level": "profi",
+      "question": "Port Vila: 11. November 2023, 23:00. Flugzeit 8 h 30 min nach Avarua. Wann landet man?",
+      "answer": [
+        "Port Vila UTC+11: Start 12:00 UTC am 11. November. Ankunft 20:30 UTC; Avarua UTC−10: 10:30 am 11. November 2023."
+      ],
+      "pages": "B 15",
+      "origin": "Datumsrechnung 3",
+      "note": "",
+      "links": [
+        "pazifik"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "D01",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "basis",
+      "question": "Wozu braucht man eine Datumsgrenze?",
+      "answer": [
+        "Die örtlichen Kalenderdaten müssen auf einer umrundbaren Erde zusammenpassen. Beim Überschreiten der Datumsgrenze wird deshalb das Datum angepasst. Es handelt sich um eine Kalenderregel, nicht um eine Zeitreise."
+      ],
+      "pages": "B 14",
+      "origin": "Datumsgrenze & Quellenkritik",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "D02",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "basis",
+      "question": "Wo verläuft die Datumsgrenze?",
+      "answer": [
+        "Überwiegend im Pazifik nahe dem 180°-Meridian. Sie weicht davon ab, damit Staaten und Inselgruppen möglichst einheitliche Kalenderdaten verwenden können."
+      ],
+      "pages": "B 14",
+      "origin": "Datumsgrenze & Quellenkritik",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "D03",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "basis",
+      "question": "Was geschieht beim Überqueren der Datumsgrenze nach Westen oder Osten?",
+      "answer": [
+        "Nach Westen, etwa von Alaska Richtung Russland: einen Kalendertag hinzufügen. Nach Osten, etwa von Russland nach Alaska: einen Kalendertag abziehen. Bei konkreten Reisen zusätzlich Reisezeit und Zonenoffsets beachten."
+      ],
+      "pages": "B 14",
+      "origin": "Datumsgrenze & Quellenkritik",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "D04",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "vertieft",
+      "question": "Was geschah beim Datumswechsel Samoas Ende 2011?",
+      "answer": [
+        "Auf Donnerstag, den 29. Dezember 2011, folgte Samstag, der 31. Dezember. Der 30. Dezember wurde ausgelassen; Samoa wechselte auf die Seite mit dem früher beginnenden Kalendertag."
+      ],
+      "pages": "B 14–15",
+      "origin": "Datumsgrenze & Quellenkritik",
+      "note": "Samoa liegt seit dem Wechsel auf der westlichen Datumsseite. Die gegenteilige Passage im Dossier ist überholt.",
+      "links": [
+        "pazifik"
+      ],
+      "status": "praezisiert",
+      "image": null
+    },
+    {
+      "id": "D05",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "vertieft",
+      "question": "Welchen wirtschaftlichen Vorteil versprach sich Samoa vom Wechsel?",
+      "answer": [
+        "Die Arbeitstage stimmen seither besser mit wichtigen Partnern wie Australien und Neuseeland überein. Das erleichtert Handel und Kommunikation, weil weniger Geschäftstage durch unterschiedliche Wochenenden verloren gehen."
+      ],
+      "pages": "B 15",
+      "origin": "Samoa: Begründung",
+      "note": "",
+      "links": [
+        "pazifik"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "D06",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "vertieft",
+      "question": "Was zeigen die beiden Venezuela-Artikel von 2007 und 2016?",
+      "answer": [
+        "2007 wurde die Uhr um eine halbe Stunde auf UTC−4:30 zurückgestellt. 2016 wurde diese Änderung rückgängig gemacht. Die Artikel zeigen, dass Zeitzonen politische Entscheidungen sind und historische Zeitangaben datiert werden müssen."
+      ],
+      "pages": "B 13",
+      "origin": "Vergleich der Zeitungstexte",
+      "note": "",
+      "links": [],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "D07",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "profi",
+      "question": "Warum darf man eine alte Zeitzonenkarte nicht für jede Flugrechnung verwenden?",
+      "answer": [
+        "Sommerzeit und gesetzliche Offsets können sich ändern. Man braucht den Ort, das Datum und die damals geltenden Regeln. Erst dann lassen sich beide Uhrzeiten auf UTC beziehen und zuverlässig vergleichen."
+      ],
+      "pages": "B 12–15",
+      "origin": "Datumsgrenze & Quellenkritik",
+      "note": "",
+      "links": [
+        "tz"
+      ],
+      "status": "abgeglichen",
+      "image": null
+    },
+    {
+      "id": "D08",
+      "topic": "Datumsgrenze & Quellenkritik",
+      "goals": [
+        "L11"
+      ],
+      "level": "profi",
+      "question": "Welche Unterrichtsinhalte und Prüfungsziele sind durch die beiden PDFs nicht belegt?",
+      "answer": [
+        "Ein separates Prüfungslernzielblatt liegt nicht vor. Magnetfeld und Kartografie werden im Inhaltsverzeichnis angekündigt, ihre Kapitel sind in diesen beiden Ausschnitten aber nicht enthalten. Die Lernziele der Kartei sind aus dem vorhandenen Stoff abgeleitet."
+      ],
+      "pages": "A 1; B 15",
+      "origin": "Umfang der Ressourcen",
+      "note": "Die Kartei beansprucht keine Abdeckung fehlender Kapitel oder eines unbekannten Prüfungsumfangs.",
+      "links": [],
+      "status": "praezisiert",
+      "image": null
+    }
+  ]
+};

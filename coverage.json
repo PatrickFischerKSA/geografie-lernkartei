@@ -1,0 +1,226 @@
+[
+  {
+    "id": "L01",
+    "description": "Fachgebiete unterscheiden, Mensch und Natur verknüpfen und räumliche Massstäbe beachten.",
+    "cards": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08"
+    ]
+  },
+  {
+    "id": "L02",
+    "description": "Kugel, Rotationsellipsoid und Geoid erklären und voneinander abgrenzen.",
+    "cards": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07"
+    ]
+  },
+  {
+    "id": "L03",
+    "description": "Grössenordnungen, Planeten, Entstehung und Modellgrenzen verstehen.",
+    "cards": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19"
+    ]
+  },
+  {
+    "id": "L04",
+    "description": "Alle neun Kennzahlen-Aufgaben mit Einheiten und Rechenweg lösen.",
+    "cards": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10"
+    ]
+  },
+  {
+    "id": "L05",
+    "description": "Orte und Kontinente den Halbkugeln zuordnen und Positionen vergleichen.",
+    "cards": [
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "H06",
+      "H07",
+      "H08",
+      "H09",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19"
+    ]
+  },
+  {
+    "id": "L06",
+    "description": "Breite und Länge lesen, umrechnen, auf Karten messen und Gegenpunkte berechnen.",
+    "cards": [
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05",
+      "K06",
+      "K07",
+      "K08",
+      "K09",
+      "K10",
+      "K11",
+      "K12",
+      "K13",
+      "K14",
+      "K15",
+      "K16",
+      "K17"
+    ]
+  },
+  {
+    "id": "L07",
+    "description": "Die Tour d’Europe und geografische Grenzen mit dem Gradnetz erschliessen.",
+    "cards": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16"
+    ]
+  },
+  {
+    "id": "L08",
+    "description": "Rotation und Revolution trennen, Achsneigung erklären und Sonnenstände zuordnen.",
+    "cards": [
+      "J01",
+      "J02",
+      "J03",
+      "J04",
+      "J05",
+      "J06",
+      "J07",
+      "J08",
+      "J09",
+      "J10",
+      "J11",
+      "J12",
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "J18",
+      "J19",
+      "J20"
+    ]
+  },
+  {
+    "id": "L09",
+    "description": "Ortszeit von Zonenzeit unterscheiden und Zeitdifferenzen nachvollziehbar berechnen.",
+    "cards": [
+      "Z01",
+      "Z02",
+      "Z03",
+      "Z04",
+      "Z05",
+      "Z06",
+      "Z07",
+      "Z08",
+      "Z09",
+      "Z10",
+      "Z11",
+      "Z12",
+      "Z13",
+      "Z14",
+      "Z15",
+      "Z16"
+    ]
+  },
+  {
+    "id": "L10",
+    "description": "Übertragungszeiten und Flugaufgaben einschliesslich Sommerzeit und Datumswechsel lösen.",
+    "cards": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07",
+      "T08",
+      "T09",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T14",
+      "T15",
+      "T16",
+      "T17",
+      "T18"
+    ]
+  },
+  {
+    "id": "L11",
+    "description": "Datumswechsel erklären und historische Zeitzonenentscheidungen einordnen.",
+    "cards": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D08"
+    ]
+  }
+]

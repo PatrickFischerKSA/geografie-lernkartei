@@ -1,0 +1,12 @@
+{
+  "name": "geografie-lernkartei",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Geografie zum Wenden: 158 Lernkarten zu den Unterrichtsdossiers",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "sync": "node scripts/sync.cjs",
+    "build": "node scripts/build-static.cjs",
+    "test:browser": "node tests/browser.cjs"
+  }
+}
